@@ -88,7 +88,10 @@ const updateBlog = async (req, res) => {
         //previous title
         blog.title = title || blog.title;
         blog.body = body || blog.body;
-
+        
+        if(typeof blog.title !=="string" || typeof blog.body !=="string"){
+            return res.status(400).send({status : false , message : "mention correct format of the field"})
+        }
 
         if (typeof tags != "object") {
             tags = [tags]
@@ -220,6 +223,8 @@ catch (err) {
 res.status(500).send({ status: false, message: err.message })
 }
 }*/
+
+
 const deleteBlogsByQuery = async (req, res) => {
     try {
         const { authorId, category, tags, subcategory, unpublished } = req.query;
