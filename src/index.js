@@ -16,7 +16,7 @@ catch(error){
     console.log(error);
 }*/
 
-mongoose.connect("mongodb+srv://narattamsarkar91:pJO4W2WQoODI53Fn@cluster0.fqieqnn.mongodb.net/blog_project", {
+mongoose.connect("mongodb+srv://Narottam2000:Sarkar2000@cluster0.bciguah.mongodb.net/blog", {
 useNewUrlParser: true 
 }).then(()=> {
     console.log("MongoDB is Connected");
