@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 
 try{
-    mongoose.connect("mongodb+srv://narattamsarkar91:0pNxpWQJtpcj3sPe@website.gd5eboz.mongodb.net/?authSource=+website&authMechanism=SCRAM-SHA-1",{
+    mongoose.connect("mongodb+srv://narattamsarkar91:0pNxpWQJtpcj3sPe@website.gd5eboz.mongodb.net/Blogging-project",{
     useNewUrlParser:true
 })
 }
