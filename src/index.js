@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 
 try{
-    mongoose.connect("mongodb://127.0.0.1:27017/Blog_Management?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.8.1",{
+    mongoose.connect("mongodb+srv://rraj34361:bXgwmkpBz9CHdAfr@cluster0.brjrlou.mongodb.net/Blogging-project",{
     useNewUrlParser:true
 })
 }
